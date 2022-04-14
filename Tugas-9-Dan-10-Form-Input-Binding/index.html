@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<d>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="apps">
+        <input type="text" v-model="cari" placeholder="Cari">
+        <ul v-for="knd in filterbooks">
+            <li>{{ knd.books1 }}</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:'#apps',
+            data: {
+                cari: '',
+                Books : [
+                    {books1:'Kalkulus Dasar'},
+                    {books1:'Fisika Awal'},
+                    {books1:'Aljabar Linier Elementer'},
+                    {books1:'Aljabar Abstrak'},
+                    {books1:'algoritma Pemrograman'},
+                ]
+            },
+            computed: {
+                filterbooks: function(){
+                    return this.Books.filter((knd)=>{
+                        return knd.books1.match(this.cari)
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

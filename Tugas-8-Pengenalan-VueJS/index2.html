@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Masih Belajar kak yang ini rada susah waktunya gak keburu dan bakal belajar lagi -->
+  <!-- dan hasilnya diweb tapi dengan console tidak menampilkan form -->
+      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script>
+        function mulai() {
+        const daftarKunci = Object.keys(keadaan)
+
+        daftarKunci.forEach(kunci => {
+            let nilai = keadaan[kunci]
+
+            Object.defineProperty(keadaan, kunci, {
+            enumerable: true,
+            configurable: true,
+            get: function pengambilReaktif() {
+                return nilai
+            },
+            set: function pengaturReaktif(nilaiBaru) {
+                if (nilai === nilaiBaru) {
+                return;
+                }
+                nilai = nilaiBaru
+                kalkulasiHasil()
+                mutakhirkanTampilan()
+            }
+            })
+        })
+        }
+      </script>
+</body>
+</html>
