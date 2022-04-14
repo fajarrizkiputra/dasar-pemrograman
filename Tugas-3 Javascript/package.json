@@ -1,0 +1,19 @@
+{
+  "name": "jcc-pelatihan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fajar2122/jcc-jabar-coding-camp.git"
+  },
+  "author": "Fajar Rizki Putra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fajar2122/jcc-jabar-coding-camp/issues"
+  },
+  "homepage": "https://gitlab.com/fajar2122/jcc-jabar-coding-camp#readme"
+}
