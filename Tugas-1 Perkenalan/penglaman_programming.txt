@@ -1,0 +1,3 @@
+Pengalam programming saya ketika sekolah dan semasa kuliah membuat website sekolah SMPN 5 Karawng Barat hanya sekedar tampilan/layouting. 
+- ketika semasa kuliah membuat aplikasi android tiket pencucian motor namun belum sepenuhnya jadi dan belum dihosting
+- setelah lulus ada projectan kecil-kecilan yaitu membuat website SMPN 1 Rawamerta saya berposisi dibagian front-end itu sendiri
